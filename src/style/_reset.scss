@@ -1,0 +1,117 @@
+@import "./variaveis";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: $text-color;
+}
+
+p {
+  margin: 0;
+}
+
+@mixin head-foot-reset() {
+  background: $header-background;
+  padding: 16px 106px;
+  display: flex;
+  color: $text-color;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  img {
+    height: 54px;
+    width: 160px;
+  }
+
+  .navBar {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    justify-content: center;
+
+    .link {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+}
+
+@mixin default-button() {
+  background: $btn-bg;
+  width: 300px;
+  border: none;
+  border-radius: 8px;
+  a {
+    font-size: 18px;
+    padding: 12px 24px;
+    color: $text-color-link;
+    text-decoration: none;
+    display: block;
+  }
+}
+@mixin title-default() {
+  font-family: $proxima-nova-font;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74px;
+  margin: 0;
+  color: $text-color;
+}
+
+@mixin sub-default() {
+  font-family: $proxima-nova-font;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 66px;
+  margin: 0;
+  color: $text-color;
+}
+
+@mixin text-default() {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.73px;
+  margin: 0;
+  width: 71vw;
+  padding: 16px 0 40px;
+}
+
+@mixin cardTitle-default() {
+  color: $text-color;
+  font-family: $proxima-nova-font;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.73px;
+  margin: 0;
+}
+@mixin cardText-default() {
+  font-family: 'Montserrat';
+  color: $text-color;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 42px;
+  color: $text-color-desc;
+  margin: 0;
+}
+
+@mixin postTitle-default() {
+  font-family: $proxima-nova-font;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0;
+  color: $text-color;
+  letter-spacing: 0.73px;
+}
